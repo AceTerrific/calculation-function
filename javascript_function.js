@@ -47,3 +47,30 @@ let calc = myCalculator;
 // calc.showData(calc.obj);
 // calc.newSetOfNumbers(500,20)
 // calc.showData(calc.obj)
+
+function test() {
+  const sumResult = calc.add(2, 6);
+  const diffResult = calc.subtract(16, 8);
+  const prodResult = calc.multiply(4, 2);
+  const quotResult = calc.divide(64, );
+  const expected = 8;
+
+  console.assert(
+    sumResult === expected,
+    `Check add function is failing - Expected: ${expected} Recieved: ${sumResult}`
+  );
+  console.assert(
+    diffResult === expected,
+    `Check subrtact function is failing - Expected: ${expected} Recieved: ${diffResult}`
+  );
+  console.assert(
+    prodResult === expected,
+    `Check multiply function is failing - Expected: ${expected} Recieved: ${prodResult}`
+  );
+  console.assert(
+    quotResult === expected,
+    `Check divide function is failing - Expected: ${expected} Recieved: ${quotResult}`
+  );
+}
+
+test();
